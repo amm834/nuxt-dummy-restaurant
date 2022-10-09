@@ -1,13 +1,8 @@
 <template>
-$END$
+  <thead>
+  <tr>
+    <th scope="col">id</th>
+    <th scope="col">Name</th>
+  </tr>
+  </thead>
 </template>
-
-<script>
-export default {
-name: "Header"
-}
-</script>
-
-<style scoped>
-
-</style>

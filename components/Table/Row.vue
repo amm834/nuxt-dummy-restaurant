@@ -1,13 +1,19 @@
-<template>
-$END$
-</template>
-
-<script>
-export default {
-name: "Row"
-}
+<script setup lang="ts">
+defineProps<{
+  id: number,
+  rank: number,
+  name: string
+}>()
 </script>
 
-<style scoped>
+<template>
+  <tr>
+    <th scope="row">{{ rank }}</th>
+    <td>
+    <NuxtLink :to="`/restaurants/${id}`">
+    {{ name }}
+    </NuxtLink>
+    </td>
+  </tr>
 
-</style>
+</template>
