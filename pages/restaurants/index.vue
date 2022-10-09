@@ -9,35 +9,26 @@ const restaurants = {
 </script>
 
 <template>
-  <div class="container my-5">
-    <div class="row">
-    <h2 class="mb-5">Top 50 Restaurants</h2>
+  <div>
+    <NavBar />
+    <div class="container row my-4">
+      <h2 class="mb-5">Top 50 Restaurants</h2>
       <div class="col-md-2 w-50">
         <table class="table table-striped">
-          <TableHeader/>
+          <TableHeader />
           <tbody>
-          
-            <TableRow 
-          v-for="(restaurant, index) in restaurants.first"
-          :id="restaurant.id"
-          :key="restaurant.id"
-          :rank="restaurant.rank"
-          :name="restaurant.name"
-          />
+
+            <TableRow v-for="(restaurant, index) in restaurants.first" :id="restaurant.id" :key="restaurant.id"
+              :rank="restaurant.rank" :name="restaurant.name" />
           </tbody>
         </table>
       </div>
       <div class="col-md-2 w-50">
         <table class="table table-striped">
-          <TableHeader/>
+          <TableHeader />
           <tbody>
-            <TableRow 
-          v-for="(restaurant, index) in restaurants.second"
-          :id="restaurant.id"
-          :key="restaurant.id"
-          :rank="restaurant.rank"
-          :name="restaurant.name"
-          />
+            <TableRow v-for="(restaurant, index) in restaurants.second" :id="restaurant.id" :key="restaurant.id"
+              :rank="restaurant.rank" :name="restaurant.name" />
           </tbody>
         </table>
       </div>
