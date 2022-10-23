@@ -6,11 +6,11 @@ const restaurants = {
   first: [...data].splice(0, 25),
   second: [...data].splice(25, 25),
 }
+
 </script>
 
 <template>
   <div>
-    <NavBar />
     <div class="container row my-4">
       <h2 class="mb-5">Top 50 Restaurants</h2>
       <div class="col-md-2 w-50">

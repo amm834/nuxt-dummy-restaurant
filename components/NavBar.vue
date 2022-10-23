@@ -12,7 +12,7 @@
         </svg>
       </a>
       <div class="ms-auto d-flex gap-4">
-        <NuxtLink to="/home" class="nav-link text-white">Home</NuxtLink>
+        <NuxtLink to="/" class="nav-link text-white">Home</NuxtLink>
         <NuxtLink to="/restaurants" class="nav-link text-white">Restaurants</NuxtLink>
       </div>
     </div>
